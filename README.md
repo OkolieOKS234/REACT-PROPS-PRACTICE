@@ -1,6 +1,6 @@
 # PRACTICE USING PROPS
 
-I decided to build a simple contact list app that makes understanding the concept of Props very easily and straight to the point. Below is the picture of how the React App looks like.
+I decided to build a simple contact list app that makes understanding the concept of Props very easy and straight to the point. Below is the picture of how the React App looks like.
 
 ![contacts.PNG](./src/components/contacts.PNG)
 
