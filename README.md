@@ -2,11 +2,7 @@
 
 I decided to build a simple contact list app that makes understanding the concept of Props very easily and straight to the point. Below is the picture of how the React App looks like.
 
-
-
-![contacts.PNG](C:\Users\doksu\Pictures\MEmu%20Photo\contacts.PNG)
-
-
+![contacts.PNG](./src/components/contacts.PNG)
 
 ```javascript
 import React from "react";
@@ -51,7 +47,6 @@ In our App.jsx we create a function that gets array of data for all the contacts
 #### Card.jsx
 
 ```javascript
-
 function Card(props) {
   return (
     // props in action
@@ -76,8 +71,6 @@ export default Card;
 ```
 
 This basically shows the action of props allowing us to access the properties of each Card in our App.jsx. We can do this by passing props(Stands for properties) as a param.
-
-
 
 ```javascript
 const contacts = [
@@ -106,15 +99,13 @@ const contacts = [
 export default contacts;
 ```
 
-A simple array of all the information that was accessed. Again we used 
+A simple array of all the information that was accessed. Again we used
 
 ```javascript
-export default contacts
+export default contacts;
 ```
 
 to export the contacts array
-
-
 
 ---
 
