@@ -13,6 +13,8 @@ import contacts from "../contacts";
 
 We start by doing the basics of any React using the concept of import and export... We are importing React(What our app needs to run), Our styles.css, Card from Card.jsx(Various contact cards) and several contacts from the contacts.js
 
+#### App.jsx
+
 ```javascript
 function App() {
   return (
@@ -71,6 +73,8 @@ export default Card;
 ```
 
 This basically shows the action of props allowing us to access the properties of each Card in our App.jsx. We can do this by passing props(Stands for properties) as a param.
+
+#### Contact.js
 
 ```javascript
 const contacts = [
