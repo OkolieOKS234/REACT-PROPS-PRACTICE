@@ -2,7 +2,7 @@
 
 I decided to build a simple contact list app that makes understanding the concept of Props very easily and straight to the point. Below is the picture of how the React App looks like.
 
-![contacts.PNG](./src/components/contacts.PNG)
+![contacts.PNG](C:\Users\doksu\Pictures\MEmu%20Photo\contacts.PNG)
 
 ```javascript
 import React from "react";
@@ -12,8 +12,6 @@ import contacts from "../contacts";
 ```
 
 We start by doing the basics of any React using the concept of import and export... We are importing React(What our app needs to run), Our styles.css, Card from Card.jsx(Various contact cards) and several contacts from the contacts.js
-
-#### App.jsx
 
 ```javascript
 function App() {
@@ -42,6 +40,39 @@ function App() {
   );
 }
 export default App;
+```
+
+As one of my best saying goes.., there is always a better way to do things, we can use map function
+
+#### THIS IS THE CODE FOR FUNCTION THAT WAS CREATED TO GET THE CONTENTS FROM THE ARRAY OF
+
+<code>contacts.js</code>
+
+```javascript
+function createCard(contact) {
+  return (
+    <Card
+      name={contact.name}
+      img={contact.imgURL}
+      img={contact.imgURL}
+      phone={contact.phone}
+      email={contact.email}
+    />
+  );
+}
+```
+
+### THEN WE CAN GET IT USING OUR APP FUNCTION
+
+```javascript
+function App() {
+  return (
+    <div>
+      <h1 className="heading">My Contacts</h1>
+      {contacts.map(createCard)}
+    </div>
+  );
+}
 ```
 
 In our App.jsx we create a function that gets array of data for all the contacts, this way we can access all the array data easily...this is just a basic example so I didn't use Foreach or map for this.
@@ -73,8 +104,6 @@ export default Card;
 ```
 
 This basically shows the action of props allowing us to access the properties of each Card in our App.jsx. We can do this by passing props(Stands for properties) as a param.
-
-#### Contact.js
 
 ```javascript
 const contacts = [
