@@ -14,7 +14,7 @@ function Card(props) {
           <p className="info">{props.phone}</p>
           <p className="info">{props.email}</p>
           <p className="view_link">
-            <a href="">View More >></a>
+            <a href="./App.jsx">View More</a>
           </p>
         </div>
       </div>

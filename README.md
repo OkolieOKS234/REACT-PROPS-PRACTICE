@@ -62,6 +62,10 @@ function createCard(contact) {
 }
 ```
 
+I also added the ID in form of
+<code>key={contact.id}</code>
+to help me kill the warnings in my Developer console
+
 ### THEN WE CAN GET IT USING OUR APP FUNCTION
 
 ```javascript
