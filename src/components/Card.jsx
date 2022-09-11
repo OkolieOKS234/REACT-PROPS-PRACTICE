@@ -7,7 +7,11 @@ function Card(props) {
     <div>
       <div className="card">
         <div className="top">
-          <h2 className="name">{props.name}</h2>
+          <div className="name_details">
+            <p className="key">{props.id}.</p>
+            <h2 className="name">{props.name}</h2>
+          </div>
+
           <Avatar img={props.img} />
         </div>
         <div className="bottom">
